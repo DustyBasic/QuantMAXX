@@ -30,6 +30,18 @@ QuantMAXX tracks both layers explicitly.
 
 ---
 
+## Foundation Layers
+
+QuantMAXX inherits two upstream layers that condition the model's operating posture and persistence behavior before any QuantMAXX-specific work begins. The installer pulls them fresh from canonical sources at setup time; they are not bundled in this repository.
+
+- **[dstack](https://github.com/DustyBasic/dstack)** — three-skill cognitive-discipline scaffolding: `fractal_mem_cache` (3-tier substrate caching), `grounded_interface` (continuity-first engagement, translation-loss aware), `et_tu_brute` (bias-pattern catching and vocabulary-drift detection). Establishes the disciplined posture QuantMAXX builds on top of.
+
+- **[Graphic_Memory](https://github.com/DustyBasic/Graphic_Memory)** — cross-session observation ledger: SQLite-backed capture of evaluations and findings, 3-stage retrieval (surface → relevance → fetch), session-lifecycle hooks. Carries QuantMAXX's evaluation history forward across sessions for re-walk and pattern recognition.
+
+Re-use of foundation-layer content within a QuantMAXX install is governed by the Foundation Layer Grant declared in [`CONFIG.md`](CONFIG.md). Extraction or redistribution outside QuantMAXX usage requires separate permission from DustyBasic.
+
+---
+
 ## Components
 
 | Module | Coverage |

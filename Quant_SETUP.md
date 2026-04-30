@@ -13,6 +13,33 @@ refusal-object dispatch.
 
 ---
 
+## Foundation Layer Repositories
+
+QuantMAXX inherits two foundation layers, pulled fresh by this install
+protocol. All three runtime branches (Steps 2A / 2B / 2C) reference
+these URLs:
+
+- **dstack** — https://github.com/DustyBasic/dstack
+  - Three skills: `fractal_mem_cache` (substrate), `grounded_interface`
+    (engagement), `et_tu_brute` (cognitive hygiene).
+  - Raw README: https://raw.githubusercontent.com/DustyBasic/dstack/main/README.md
+
+- **Graphic_Memory** — https://github.com/DustyBasic/Graphic_Memory
+  - SQLite-backed cross-session observation ledger; hooks + skills.
+  - Raw README: https://raw.githubusercontent.com/DustyBasic/Graphic_Memory/main/README.md
+
+QuantMAXX itself: https://github.com/DustyBasic/QuantMAXX
+
+These are the canonical sources. Use the GitHub URLs for `git clone`
+operations (Branch 2A) and the raw README URLs for direct content fetch
+(Branches 2B and 2C).
+
+Re-use of foundation-layer content within a QuantMAXX install is
+governed by the Foundation Layer Grant declared in CONFIG.md; extraction
+or redistribution outside QuantMAXX usage requires separate permission.
+
+---
+
 ## Step 0 — Self-introspection (model-side)
 
 Before any wiring, answer for yourself:
@@ -102,9 +129,14 @@ Proceed to **Step 3**.
    mount mirrors Branch A's directory tree.
 
 3. **Pull foundation layers** into the mount via whatever cloning or
-   import mechanism your runtime supports. If none, fetch the READMEs of
-   dstack and Graphic_Memory (via web access) and treat them as
-   posture-installs held in your persistent context.
+   import mechanism your runtime supports. URLs are in the **Foundation
+   Layer Repositories** section above:
+   - dstack: https://github.com/DustyBasic/dstack
+   - Graphic_Memory: https://github.com/DustyBasic/Graphic_Memory
+
+   If your runtime cannot clone, fetch the raw READMEs from the same
+   section and treat them as posture-installs held in your persistent
+   context.
 
 4. **Materialize CONFIG.md, MEMORY.md, REFERENCE_SHEET.md, and
    QuantMAXX.py** into the mount.
@@ -115,12 +147,14 @@ Proceed to **Step 3**.
 
 ## Step 2C — Single-window context absorption
 
-1. **Read these documents into conversation context** (request from user
-   if not already attached):
-   - dstack README
-   - Graphic_Memory README
-   - QuantMAXX CONFIG.md
-   - QuantMAXX REFERENCE_SHEET.md
+1. **Read these documents into conversation context** by fetching the
+   raw README / file URLs (or request from user if web access is
+   unavailable). URLs from the **Foundation Layer Repositories** section
+   above:
+   - dstack README — https://raw.githubusercontent.com/DustyBasic/dstack/main/README.md
+   - Graphic_Memory README — https://raw.githubusercontent.com/DustyBasic/Graphic_Memory/main/README.md
+   - QuantMAXX CONFIG.md — https://raw.githubusercontent.com/DustyBasic/QuantMAXX/main/CONFIG.md
+   - QuantMAXX REFERENCE_SHEET.md — https://raw.githubusercontent.com/DustyBasic/QuantMAXX/main/REFERENCE_SHEET.md
 
 2. **Hold MEMORY.md as in-context state** — track cross-conversation
    pins as a numbered list you maintain in your responses (not a file).
